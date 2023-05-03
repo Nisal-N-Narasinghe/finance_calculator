@@ -44,6 +44,11 @@
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".activities.FinanceSuggestionActivity"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

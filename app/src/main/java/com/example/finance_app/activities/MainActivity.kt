@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var btnInsertData: Button
     private lateinit var btnFetchData: Button
+    private lateinit var btnSug: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         btnInsertData = findViewById(R.id.btnInsertData)
         btnFetchData = findViewById(R.id.btnFetchData)
+        btnSug = findViewById(R.id.btnSug)
+
 
         btnInsertData.setOnClickListener {
             val intent = Intent(this, InsertionActivity::class.java)
@@ -29,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         btnFetchData.setOnClickListener {
             val intent = Intent(this, FetchingActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnSug.setOnClickListener {
+            val intent = Intent(this, FinanceSuggestionActivity::class.java)
             startActivity(intent)
         }
 

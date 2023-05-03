@@ -1,4 +1,46 @@
 <resources>
     <string name="app_name">finance-app</string>
 
+
+    <!-- IT21259302 Narasinghe N.M.N.N -->
+    <string name="finance">FINANCE</string>
+    <string name="rates">RATES</string>
+    <string name="calc">CALCULATOR</string>
+    <string name="preference">PREFERENCES</string>
+    <string name="suggestion">SUGGESTION</string>
+    <string name="edSuggestion">Edit Suggestions</string>
+    <string name="selectType">Select Type</string>
+    <string name="selectBank">Select Bank</string>
+    <string name="selectPeriod">Select Period</string>
+    <string name="selectCalc">Calculators</string>
+    <string name="Calculate">Calculate</string>
+    <string name="submit">Submit</string>
+    <string name="editSuggestion">EDIT SUGGESTIONS</string>
+    <string name="editDetails">Update</string>
+    <string name="deleteDetails">SUGGESTION</string>
+    <string name="bName">Bank Name</string>
+    <string name="rate">Current Rates</string>
+    <string-array name="financeType">
+        <item>Fixed Deposit</item>
+        <item>Loan</item>
+        <item>Leasings</item>
+        <item>Insurance</item>
+        <item>Exchange Rates</item>
+    </string-array>
+    <!-- IT21259302 Narasinghe N.M.N.N -->
+    <string-array name="bankNames">
+        <item>BOC</item>
+        <item>NSB</item>
+        <item>Com-Bank</item>
+        <item>Sampath</item>
+        <item>Peoples Bank</item>
+    </string-array>
+    <string-array name="tPeriod">
+        <item>03 Months</item>
+        <item>06 Months</item>
+        <item>12 Months</item>
+        <item>36 Months</item>
+        <item>60 Months</item>
+    </string-array>
+
 </resources>

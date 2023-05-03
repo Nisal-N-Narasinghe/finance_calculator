@@ -44,12 +44,15 @@ class InsertionActivity : AppCompatActivity() {
 
         if (empName.isEmpty()) {
             etEmpName.error = "Please enter name"
+            return
         }
         if (empAge.isEmpty()) {
             etEmpAge.error = "Please enter age"
+            return
         }
         if (empSalary.isEmpty()) {
             etEmpSalary.error = "Please enter salary"
+            return
         }
 
         val empId = dbRef.push().key!!
