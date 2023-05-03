@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-      /*  btnFetchData.setOnClickListener {
+        btnFetchData.setOnClickListener {
             val intent = Intent(this, FetchingActivity::class.java)
             startActivity(intent)
-        } */
+        }
 
     }
 }

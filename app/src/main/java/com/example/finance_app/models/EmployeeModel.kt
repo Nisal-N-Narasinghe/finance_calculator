@@ -1,4 +1,4 @@
-package com.example.finance_app.Models
+package com.example.finance_app.models
 
 data class EmployeeModel(
     var empId: String? = null,
