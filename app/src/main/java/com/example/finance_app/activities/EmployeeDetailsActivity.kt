@@ -1,6 +1,7 @@
 package com.example.finance_app.activities
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -34,6 +35,11 @@ class EmployeeDetailsActivity: AppCompatActivity() {
                 intent.getStringExtra("empName").toString()
             )
         }
+        btnDelete.setOnClickListener {
+            deleteRecord(
+                intent.getStringExtra("empId").toString()
+            )
+        }
     }
 
     private fun initView() {
@@ -52,6 +58,23 @@ class EmployeeDetailsActivity: AppCompatActivity() {
         tvEmpAge.text = intent.getStringExtra("empAge")
         tvEmpSalary.text = intent.getStringExtra("empSalary")
 
+    }
+
+    private fun deleteRecord(
+        id: String
+    ){
+        val dbRef = FirebaseDatabase.getInstance().getReference("Employees").child(id)
+        val mTask = dbRef.removeValue()
+
+        mTask.addOnSuccessListener {
+            Toast.makeText(this, "Employee data deleted", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, FetchingActivity::class.java)
+            finish()
+            startActivity(intent)
+        }.addOnFailureListener{ error ->
+            Toast.makeText(this, "Deleting Err ${error.message}", Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun openUpdateDialog(
