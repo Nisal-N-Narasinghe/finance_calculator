@@ -1,11 +1,11 @@
 # :sparkles: Finance Calculator
 
-## This App still under constructing.
- # 🏆 : Done  ### Login , CRUD
+## 👷‍♂️ This App still under constructing.
+ # 🏆 : Done  🥇 : Login , CRUD
   
  
   
- # 🚧 : To Do ### Finance Calculators
+ # 🚧 : To Do 🥈 :  Finance Calculators
    
    
   # ☁️ : Data Base 
