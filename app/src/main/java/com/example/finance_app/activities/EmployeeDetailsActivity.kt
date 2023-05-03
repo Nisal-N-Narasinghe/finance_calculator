@@ -36,6 +36,24 @@ class EmployeeDetailsActivity: AppCompatActivity() {
         }
     }
 
+    private fun initView() {
+        tvEmpId = findViewById(R.id.tvEmpId)
+        tvEmpName = findViewById(R.id.tvEmpName)
+        tvEmpAge = findViewById(R.id.tvEmpAge)
+        tvEmpSalary = findViewById(R.id.tvEmpSalary)
+
+        btnUpdate = findViewById(R.id.btnUpdate)
+        btnDelete = findViewById(R.id.btnDelete)
+    }
+
+    private fun setValuesToViews() {
+        tvEmpId.text = intent.getStringExtra("empId")
+        tvEmpName.text = intent.getStringExtra("empName")
+        tvEmpAge.text = intent.getStringExtra("empAge")
+        tvEmpSalary.text = intent.getStringExtra("empSalary")
+
+    }
+
     private fun openUpdateDialog(
         empId: String,
         empName: String
@@ -68,7 +86,6 @@ class EmployeeDetailsActivity: AppCompatActivity() {
                 etEmpAge.text.toString(),
                 etEmpSalary.text.toString()
             )
-
             Toast.makeText(applicationContext, "Employee Data Updated", Toast.LENGTH_LONG).show()
 
             //we are setting updated data to our textviews
@@ -78,8 +95,8 @@ class EmployeeDetailsActivity: AppCompatActivity() {
 
             alertDialog.dismiss()
         }
-    }
 
+        }
     private fun updateEmpData(
         id: String,
         name: String,
@@ -90,25 +107,11 @@ class EmployeeDetailsActivity: AppCompatActivity() {
         val empInfo = EmployeeModel(id, name, age, salary)
         dbRef.setValue(empInfo)
 
-
-    }
-
-    private fun initView() {
-        tvEmpId = findViewById(R.id.tvEmpId)
-        tvEmpName = findViewById(R.id.tvEmpName)
-        tvEmpAge = findViewById(R.id.tvEmpAge)
-        tvEmpSalary = findViewById(R.id.tvEmpSalary)
-
-        btnUpdate = findViewById(R.id.btnUpdate)
-        btnDelete = findViewById(R.id.btnDelete)
-    }
-
-    private fun setValuesToViews() {
-        tvEmpId.text = intent.getStringExtra("empId")
-        tvEmpName.text = intent.getStringExtra("empName")
-        tvEmpAge.text = intent.getStringExtra("empAge")
-        tvEmpSalary.text = intent.getStringExtra("empSalary")
-
     }
 }
+
+
+
+
+
 
