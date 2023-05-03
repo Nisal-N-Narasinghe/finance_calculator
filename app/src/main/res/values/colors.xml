@@ -12,4 +12,15 @@
     <color name="yellow">#FFC801</color>
     <color name="divider_grey">#E9E9E9</color>
 
+    <color name="lightGreen">#8FE3CF</color>
+    <color name="darkBlue">#002B5B</color>
+    <color name="Teal">#256D85</color>
+    <color name="garyBlue">#2B4865</color>
+
+    <color name="teal_100">#FF03DAC5</color>
+    <color name="red">#ffcc0000</color>
+    <color name="green">#4efc03</color>
+
+    <color name="redN">#AA1B11</color>
+
 </resources>
