@@ -1,4 +1,4 @@
-package com.example.finance_app
+package com.example.finance_app.activities
 
 
 

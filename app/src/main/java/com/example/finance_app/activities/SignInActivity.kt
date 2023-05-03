@@ -1,4 +1,4 @@
-package com.example.finance_app
+package com.example.finance_app.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -46,12 +46,12 @@ class SignInActivity : AppCompatActivity() {
         }
     }
 
-   /* override fun onStart() {
+    override fun onStart() {
         super.onStart()
 
         if(firebaseAuth.currentUser != null){
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-    } */
+    }
 }
