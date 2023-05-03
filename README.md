@@ -1,9 +1,12 @@
-## Finance Calculator
+# :sparkles: Finance Calculator
 
-# This App still under constructing.
- ## Done
-  ### Login
-  ### CRUD Operation
+## This App still under constructing.
+ # :trophy: Done
+  ## Login
+  ## CRUD Operation
   
- ## To Do
+ # :dart: To Do
    ## Finance Calculators
+   
+   
+   <img width="75px" src="https://github.com/Pedro-Murilo/icons-for-readme/blob/main/.github/firebase-icon.svg" alt="Firebase Icon" />
