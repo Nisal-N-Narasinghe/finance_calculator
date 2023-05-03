@@ -45,7 +45,7 @@ class FinanceSuggestionActivity:AppCompatActivity() {
             sug_input_field.text.clear()
         }
         sug_edit_btn.setOnClickListener {
-            val intent = Intent(this, FetchingActivity::class.java)
+            val intent = Intent(this, FetchingSuggestionsActivity::class.java)
             startActivity(intent)
         }
     }
